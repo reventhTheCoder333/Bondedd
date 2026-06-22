@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+build/
+*.local
+*.tsbuildinfo
+
+# Env
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.DS_Store
+.cursor/
+*.log
+.vscode/
+
+# Vite
+*.local

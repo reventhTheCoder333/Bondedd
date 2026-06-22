@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Cormorant Garamond (variable weight) ── */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/Cormorant_Garamond/CormorantGaramond-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('/Cormorant_Garamond/CormorantGaramond-Italic-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ── Sorts Mill Goudy ── */
+@font-face {
+  font-family: 'Sorts Mill Goudy';
+  src: url('/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sorts Mill Goudy';
+  src: url('/Sorts_Mill_Goudy/SortsMillGoudy-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* ── Base resets ── */
+html {
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+body {
+  @apply font-body text-black bg-white antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
